@@ -30,7 +30,7 @@ Spring Data With MongoDB
 			<version>4.2.3.BETA</version>
 		</dependency>
 ````
-###### 3. Adding @EnableMongock annotation to our Application class
+##### 3. Adding @EnableMongock annotation in Application class
 ````
 @SpringBootApplication
 @EnableMongock
@@ -42,11 +42,12 @@ public class SpringDataWithMongodbApplication {
 
 }
 ````
-###### 4. Adding Log File pkg name in propeties file
+##### 4. Adding Log File pkg name in propeties file
+
 ````
 mongock.change-logs-scan-package=com.ganesh.api.config
 ````
-###### 5. Create One DatabaseChangeLog Class
+##### 5. Create One DatabaseChangeLog Class
 ````
 @ChangeLog
 public class DatabaseChangeLog {
